@@ -4,7 +4,7 @@ function Services(){
 
     return(
         <div id="services" className="content">
-        Services
+        Services Page
     </div>
     ) 
     
