@@ -24,11 +24,11 @@ function App() {
       </Router> */}
       <Navbar/>
       <HomePage/>
-      <AboutUs/>
-      <ContactInfo/>
-      <GetInTouch/>
-      <Protfolio/>
       <Services/>
+      <Protfolio/>
+      <AboutUs/>
+      <GetInTouch/>
+      <ContactInfo/>
     </div>
     </>
   )
