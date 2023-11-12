@@ -5,14 +5,16 @@ import GetInTouch from "./GetInTouch";
 import Protfolio from "./Protfolio";
 import Services from "./Services";
 
-function HomePage(){
+function HomePage() {
 
-    return(
+    return (
         <div id="homepage" className="content">
-            HomePage
-    </div>
-    ) 
-    
+            <h1>Welcome to Vishal Interiors</h1>
+            <p>Crafting Spaces with Creativity and Precision</p>
+            <button>Enquiry Now</button>
+        </div>
+    )
+
 
 }
 
