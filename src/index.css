@@ -75,8 +75,60 @@ body, .navbaList {
 
 
   /* Body */
-  .content{
+  /* .content{
     padding: 100px;
     background-color: #2c1f31;
     margin: 10px;
+  } */
+
+
+  /* Adding Style for page  */
+  .rowForServices
+  {
+    display: flex;
+    width: 92%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  .canteenInterior
+  {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .canteenInterior img
+  {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .canteenInterior:hover
+  {
+    box-shadow: 0 0 30px 0px rgba(95, 65, 65, 0.4);
+    transform: scale(1.02,1.02);
+    transition: 0.4s;
+  }
+
+  .serviceBtn
+  {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px #000;
+    color: #2c1f31;
+    cursor: pointer;
+  }
+
+  .serviceBtn:hover
+  {
+    background-color: #A8D3E2;
+    transition: 0.4s;
   }
