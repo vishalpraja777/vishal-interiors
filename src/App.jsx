@@ -7,6 +7,8 @@ import ContactInfo from './pages/ContactInfo'
 import Protfolio from './pages/Protfolio'
 import Services from './pages/Services'
 import Navbar from './components/navbar'
+import Footer from './components/Footer'
+import Feedback from './components/Feedback'
 
 function App() {
 
@@ -25,10 +27,11 @@ function App() {
       <Navbar/>
       <HomePage/>
       <Services/>
-      <Protfolio/>
       <AboutUs/>
-      <GetInTouch/>
+      <Protfolio/>
+      <Feedback/>
       <ContactInfo/>
+      <Footer/>
     </div>
     </>
   )

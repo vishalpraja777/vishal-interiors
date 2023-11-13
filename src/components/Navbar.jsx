@@ -24,17 +24,19 @@ function Navbar() {
 
 
   return (
-    <header className={`navbarHeader ${scrolled ? 'opaque' : 'transparent'}`}>
+    // <header className={`navbarHeader ${scrolled ? 'opaque' : 'transparent'}`}>
+    <header className="navbarHeader">
       <div className="navbarMain">
         <nav className="navbarLogo">Vishal Interiors</nav>
         <ul className="navbaList">
           <li><Link to="homepage" smooth={true} offset={0} duration={500}>Homepage</Link></li>
-          <li><Link to="services" smooth={true} offset={0} duration={500}>services</Link></li>
-          <li><Link to="protfolio" smooth={true} offset={0} duration={500}>protfolio</Link></li>
-          <li><Link to="aboutus" smooth={true} offset={0} duration={500}>aboutus</Link></li>
-          <li><Link to="contactinfo" smooth={true} offset={0} duration={500}>contactinfo</Link></li>
+          <li><Link to="services" smooth={true} offset={0} duration={500}>Services</Link></li>
+          <li><Link to="aboutus" smooth={true} offset={0} duration={500}>About Us</Link></li>
+          <li><Link to="protfolio" smooth={true} offset={0} duration={500}>Protfolio</Link></li>
+          <li><Link to="feedback" smooth={true} offset={0} duration={500}>Feedback</Link></li>
+          <li><Link to="contactinfo" smooth={true} offset={0} duration={500}>Contact Us</Link></li>
           <li>
-            <button>
+            <button className="btn">
               Get Free Quotation
             </button>
           </li>

@@ -1,0 +1,64 @@
+
+  /* Adding Style for Service page  */
+
+  #services{
+    margin: 40px;
+  }
+
+  .servicesHeading{
+    text-align: center;
+    color: #314359;
+    margin-top: 10px;
+  }
+
+  .rowForServices
+  {
+    display: grid;
+    /* width: 92%; */
+    /* height: 100vh; */
+    margin: 10px;
+    /* text-align: center; */
+    padding: 0px 0px;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #2196F3;
+    padding: 10px; */
+
+  }
+
+  .serviceTile
+  {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin: 16px 6px;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .serviceTile img
+  {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .serviceTile:hover
+  {
+    box-shadow: 0 0 30px 0px rgba(95, 65, 65, 0.4);
+    transform: scale(1.02,1.02);
+    transition: 0.4s;
+  }
+
+  .serviceBtn
+  {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px #000;
+    color: #2c1f31;
+    cursor: pointer;
+  }
+
+  .serviceBtn:hover
+  {
+    background-color: #A8D3E2;
+    transition: 0.4s;
+  }
