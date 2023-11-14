@@ -8,6 +8,7 @@ import './style/homepage.css'
 import './style/navbar.css'
 import './style/protfolio.css'
 import './style/aboutus.css'
+import './style/contactus.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
