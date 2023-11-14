@@ -9,6 +9,7 @@ import './style/navbar.css'
 import './style/protfolio.css'
 import './style/aboutus.css'
 import './style/contactus.css'
+import './style/feedback.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
