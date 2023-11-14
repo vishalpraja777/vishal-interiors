@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ProtfolioTile from "../components/ProtfolioTile";
 import ProtfolioDetails from "../data/ProtfolioData";
 
@@ -38,24 +38,29 @@ function Protfolio() {
         <div id="protfolio" className="content">
             <h1 className="protfolioHeading">Protfolio</h1>
             <p className="protfolioHeading">Here is a list of Images from our previous works</p>
-            <div className="rowForprotfolio">
-                {protfolioDetails.slice(startIndex, endIndex).map((protfolioDetail, index) => (
-                    <ProtfolioTile key={index} protfolioDetail={protfolioDetail} />
-                ))}
+
+            <div className="photoContainer">
+                <button onClick={handlePrevPage} disabled={currentPage === 1}>
+                    &lt;
+                </button>
+                <div className="rowForprotfolio">
+                    {protfolioDetails.slice(startIndex, endIndex).map((protfolioDetail, index) => (
+                        <ProtfolioTile key={index} protfolioDetail={protfolioDetail} />
+                    ))}
+                </div>
+                <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+                    &gt;
+                </button>
             </div>
 
             {totalPages > 1 && (
                 <div className="paginationButtons">
-                    <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                        &lt; Prev
-                    </button>
+
                     <span>{`Page ${currentPage} of ${totalPages}`}</span>
-                    <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                        Next &gt;
-                    </button>
+
                 </div>
             )}
-            
+
             {/* {displayCount < protfolioDetails.length && (
                 <div className="viewMoreButton">
                     <button onClick={handleViewMore}>View More</button>

@@ -1,6 +1,17 @@
+/* @font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
+} */
+
 *{
   padding: 0;
   margin: 0;
+  font-family: "Alef", sans-serif;
+  /* font-weight: bold; */
 }
 
   /* Body */

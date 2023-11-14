@@ -43,3 +43,21 @@
     transform: scale(1.02, 1.02);
     transition: 0.4s;
 }
+
+.photoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.photoContainer button{
+    background-color: #aec6cf;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    /* color: #314359; */
+}
+
+.paginationButtons{
+    text-align: center;
+}

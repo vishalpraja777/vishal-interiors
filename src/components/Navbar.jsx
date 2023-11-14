@@ -27,7 +27,7 @@ function Navbar() {
     // <header className={`navbarHeader ${scrolled ? 'opaque' : 'transparent'}`}>
     <header className="navbarHeader">
       <div className="navbarMain">
-        <nav className="navbarLogo">Vishal Interiors</nav>
+        <nav className="navbarLogo">VISHAL INTERIORS</nav>
         <ul className="navbaList">
           <li><Link to="homepage" smooth={true} offset={0} duration={500}>Homepage</Link></li>
           <li><Link to="services" smooth={true} offset={0} duration={500}>Services</Link></li>

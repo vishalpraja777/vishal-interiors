@@ -1,0 +1,29 @@
+#aboutus{
+display: flex;
+align-items: center;
+margin: 100px 50px;
+}
+
+.leftAbout{
+    width: 50%;
+}
+
+.leftAbout h1{
+    text-align: center;
+}
+
+.leftAbout p{
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+    color: rgb(100, 100, 100);
+}
+
+.rightAbout{
+    width: 50%;
+}
+
+.rightAbout img{
+    width: 100%;
+    border-radius: 20px;
+}
