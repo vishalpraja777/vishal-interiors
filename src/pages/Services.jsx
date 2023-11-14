@@ -14,7 +14,9 @@ function Services() {
                 <p className="servicesHeading">Here is a list of services we offer</p>
                 <div className="rowForServices">
                     {serviceDetails.map((serviceDetail) => (
+                        <div key={serviceDetail.id}>
                         <ServiceTile serviceDetail={serviceDetail} />
+                        </div>
                     ))}
                 </div>
         </div>
