@@ -7,17 +7,31 @@ div {
   font-family: myFirstFont;
 } */
 
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Alef", sans-serif;
   /* font-weight: bold; */
 }
 
-  /* Body */
-  /* .content{
-    padding: 100px;
-    background-color: #2c1f31;
-    margin: 10px;
-  } */
+body {
+  background-image: url(src/assets/kitchen.jpg), linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+/* .background{
+  background-image: url(src/assets/canteen.jpg);
+  position: absolute;
+  z-index: 200;
+  position: sticky;
+} */
+
+/* Body */
+.content {
+  /* padding: 100px; */
+  background-color: #ffffff;
+  /* margin: 10px; */
+}

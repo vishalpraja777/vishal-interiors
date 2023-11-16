@@ -1,5 +1,5 @@
 #protfolio {
-    margin: 40px;
+    padding: 40px;
 }
 
 .protfolioHeading {
@@ -50,12 +50,12 @@
 }
 
 .photoContainer button{
-    background-color: #aec6cf;
+    background-color: rgb(125, 125, 125);
     width: 50%;
     height: 40px;
     border: none;
     border-radius: 50px;
-    /* color: #314359; */
+    color: #ffffff7e  ;
 }
 
 .paginationButtons{

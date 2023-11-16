@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    text-align: center;
 }
 
 .contact-leftcol div {
@@ -51,11 +52,12 @@
     margin-bottom: 13px;
     outline: none;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
     color: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* 
 .feedback-btn {
     color: #000;
     border: 1px solid #000;
@@ -74,4 +76,4 @@
     background: #f44336;
     border-color: #000;
     transition: 0.4s;
-}
+} */

@@ -1,7 +1,7 @@
 #aboutus{
 display: flex;
 align-items: center;
-margin: 100px 50px;
+padding: 100px 50px;
 }
 
 .leftAbout{

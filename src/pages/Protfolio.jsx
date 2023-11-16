@@ -6,7 +6,7 @@ function Protfolio() {
 
     const protfolioDetails = ProtfolioDetails;
 
-    const itemsPerPage = 7;
+    const itemsPerPage = 8;
     const [currentPage, setCurrentPage] = useState(1);
 
     const totalPages = Math.ceil(protfolioDetails.length / itemsPerPage);
