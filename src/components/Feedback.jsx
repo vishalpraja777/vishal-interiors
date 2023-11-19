@@ -30,7 +30,7 @@ function Feedback() {
     };
 
     return (
-        <div id="feedback" className="content1">
+        <div id="feedback" className="content2">
             <div className="sideSpace"></div>
             <div className="slider-wrapper">
                 <h2>Feedbacks</h2>

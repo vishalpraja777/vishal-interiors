@@ -1,3 +1,5 @@
+/* navbar.css */
+
 /* Reset some default styles */
 body,
 .navbaList {
@@ -38,8 +40,8 @@ body,
 
 /* Center the navigation content */
 .navbarMain {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,23 +58,24 @@ body,
 .navbaList {
   list-style: none;
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .navbaList li {
-  margin: 0 15px;
+  padding: 0 15px;
 }
 
 .navbaList a {
   text-decoration: none;
   /* color: #2c1f31; */
   color: #aec6cf;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   transition: color 0.3s ease-in-out;
 }
 
 /* Change link color on hover */
-.navbaList a:hover {
+/*.navbaList*/
+a:hover {
   color: #d6ba71;
   cursor: pointer;
 }
@@ -86,6 +89,29 @@ body,
 }
 
 .btn:hover {
-  transform: scale(1.05,1.05);
+  transform: scale(1.05, 1.05);
   /* transition: 0.2s; */
+  cursor: pointer;
+}
+
+/* Media query for small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navbarMain {
+    flex-direction: column; /* Stack navigation content vertically */
+    align-items: center; /* Center items */
+  }
+
+  .navbarLogo {
+    margin-bottom: 20px; /* Add space below the logo */
+    text-align: center; /* Center the logo text */
+  }
+
+  .navbaList {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center items */
+  }
+
+  .navbaList li {
+    margin: 10px 0; /* Add space between links */
+  }
 }

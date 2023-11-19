@@ -1,8 +1,7 @@
-
-  /* Adding Style for Service page  */
+/* service.css */
 
   #services{
-    padding: 40px;
+    /* padding: 40px; */
   }
 
   .servicesHeading{
@@ -19,6 +18,7 @@
     margin: 10px;
     /* text-align: center; */
     padding: 0px 0px;
+    /* grid-template-columns: auto auto auto auto; */
     grid-template-columns: auto auto auto auto;
     /* background-color: #2196F3;
     padding: 10px; */
@@ -61,4 +61,27 @@
   {
     background-color: #A8D3E2;
     transition: 0.4s;
+  }
+
+  @media screen and (max-width: 768px) {
+    #services {
+      padding: 3%; /* Adjust padding for smaller screens */
+    }
+  
+    .servicesHeading {
+      font-size: 1.2em; /* Adjust heading font size */
+    }
+  
+    .rowForServices {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid layout for smaller screens */
+      gap: 10px; /* Reduce gap between grid items */
+    }
+  
+    .serviceTile {
+      padding: 8px; /* Adjust tile padding */
+    }
+  
+    .serviceBtn {
+      padding: 6px 12px; /* Adjust button padding */
+    }
   }

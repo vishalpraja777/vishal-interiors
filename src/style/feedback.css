@@ -1,3 +1,5 @@
+/* feedback.css */
+
 #feedback {
     /* padding: 2rem; */
     display: flex;
@@ -89,3 +91,21 @@
     background-color: black;
 } */
 /* .slick-prev:before, .slick-next:before{} */
+
+/* Media query for small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .slider-wrapper {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 50px 20px; /* Adjust padding */
+  }
+
+  .sideSpace {
+    display: none; /* Hide one side of the slider for smaller screens */
+  }
+
+  .slick-prev, .slick-next {
+    display: none; /* Hide the navigation arrows for smaller screens */
+  }
+
+  /* Additional styles or adjustments for smaller screens as needed */
+}

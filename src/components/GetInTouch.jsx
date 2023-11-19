@@ -4,7 +4,7 @@ function GetInTouch(){
 
     return(
         <div id="getintouch" className="content">
-        GetInTouch
+        
     </div>
     ) 
     

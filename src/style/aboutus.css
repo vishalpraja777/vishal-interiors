@@ -1,29 +1,54 @@
-#aboutus{
-display: flex;
-align-items: center;
-padding: 100px 50px;
+/* aboutus.css */
+
+#aboutus {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
 }
 
-.leftAbout{
+.leftAbout {
     width: 50%;
 }
 
-.leftAbout h1{
+.leftAbout h1 {
     text-align: center;
 }
 
-.leftAbout p{
+.leftAbout p {
     padding: 50px;
     text-align: center;
     font-size: large;
     color: rgb(100, 100, 100);
 }
 
-.rightAbout{
+.rightAbout {
     width: 50%;
 }
 
-.rightAbout img{
+.rightAbout img {
     width: 100%;
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 768px) {
+    #aboutus {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .leftAbout,
+    .rightAbout {
+        width: 100%;
+        /* Take full width on smaller screens */
+        text-align: center;
+        /* Center align content */
+    }
+    .leftAbout p {
+        padding: 20px 0; /* Adjusted padding for smaller screens */
+      }
 }

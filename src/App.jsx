@@ -2,13 +2,14 @@ import { useState } from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import AboutUs from './pages/AboutUs'
 import HomePage from './pages/HomePage'
-import GetInTouch from './pages/GetInTouch'
+import GetInTouch from './components/GetInTouch'
 import ContactInfo from './pages/ContactInfo'
 import Protfolio from './pages/Protfolio'
 import Services from './pages/Services'
 import Navbar from './components/navbar'
 import Footer from './components/Footer'
 import Feedback from './components/Feedback'
+import FixedContactUsBtn from './components/FixedContactUsBtn'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Feedback/>
       <ContactInfo/>
       <Footer/>
+      <FixedContactUsBtn/>
     </div>
     </>
   )

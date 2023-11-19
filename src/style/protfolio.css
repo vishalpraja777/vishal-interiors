@@ -1,5 +1,7 @@
+/* protfoliio.css */
+
 #protfolio {
-    padding: 40px;
+    /* padding-top: 30px; */
 }
 
 .protfolioHeading {
@@ -61,3 +63,15 @@
 .paginationButtons{
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .rowForprotfolio {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .protfolioTile {
+      flex-basis: 45%; /* Adjust tile size for smaller screens */
+      margin: 8px; /* Adjust margin for smaller screens */
+    }
+  }
