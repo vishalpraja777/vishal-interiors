@@ -1,25 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import GetInTouch from "./GetInTouch";
 
 function Navbar() {
 
-  const [scrolled, setScrolled] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
+  
+  const showPopUp = () => {
+    setShowPopup(true);
+}
+
+const closePopup = () => {
+    setShowPopup(false);
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
 
   return (
@@ -35,12 +29,13 @@ function Navbar() {
           <li><Link to="feedback" smooth={true} offset={0} duration={500}>Feedback</Link></li>
           <li><Link to="contactinfo" smooth={true} offset={0} duration={500}>Contact Us</Link></li>
           <li>
-            <button className="btn">
+            <button className="btn" onClick={showPopUp}>
               Get Free Quotation
             </button>
           </li>
         </ul>
       </div>
+      <GetInTouch show={showPopup}  closePopup={closePopup} text={"Get Quotation"}/>
     </header>
   )
 

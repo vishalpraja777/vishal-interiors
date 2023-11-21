@@ -12,6 +12,7 @@ import './style/contactus.css'
 import './style/feedback.css'
 import './style/footer.css'
 import './style/fixedContactUsBtn.css'
+import './style/getintouch.css'
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
