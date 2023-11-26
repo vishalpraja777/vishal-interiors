@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProtfolioTile from "../components/ProtfolioTile";
 import ProtfolioDetails from "../data/ProtfolioData";
+import ImagePopup from "../components/ImagePopup";
 
 function Protfolio() {
 
@@ -22,16 +23,47 @@ function Protfolio() {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
-    // const initialDisplayCount = 8; // Set the initial number of images to display
-    // const [displayCount, setDisplayCount] = useState(initialDisplayCount);
+    const [clickedImg, setClickedImg] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(null);
 
-    // const handleViewMore = () => {
-    //     setDisplayCount(displayCount + 4); // Increase the display count on "View More" click
-    // };
+    const handleClick = (protfolioDetail, index) => {
+        setCurrentIndex(index);
+        setClickedImg(protfolioDetail.imageLink);
+    }
 
-    // const handleViewLess = () => {
-    //     setDisplayCount(8); // Increase the display count on "View More" click
-    // };
+    const handleRotationRight = () => {
+        const totalLength = ProtfolioDetails.length;
+        if (currentIndex + 1 >= totalLength) {
+            setCurrentIndex(0);
+            const newUrl = protfolioDetails[0].imageLink;
+            setClickedImg(newUrl);
+            return;
+        }
+        const newIndex = currentIndex + 1;
+        const newUrl = protfolioDetails.filter((item) => {
+            return protfolioDetails.indexOf(item) === newIndex;
+        });
+        const newItem = newUrl[0].imageLink;
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    }
+
+    const handleRotationLeft = () => {
+        const totalLength = ProtfolioDetails.length;
+        if (currentIndex === 0) {
+            setCurrentIndex(totalLength - 1);
+            const newUrl = protfolioDetails[totalLength - 1].imageLink;
+            setClickedImg(newUrl);
+            // return;
+        }
+        const newIndex = currentIndex - 1;
+        const newUrl = protfolioDetails.filter((item) => {
+            return protfolioDetails.indexOf(item) === newIndex;
+        });
+        const newItem = newUrl[0].imageLink;
+        setClickedImg(newItem);
+        setCurrentIndex(newIndex);
+    }
 
     return (
 
@@ -41,15 +73,20 @@ function Protfolio() {
 
             <div className="photoContainer">
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                    &lt;
+                    <i class="fa-solid fa-arrow-left fa-xl"></i>
                 </button>
                 <div className="rowForprotfolio">
+
                     {protfolioDetails.slice(startIndex, endIndex).map((protfolioDetail, index) => (
-                        <ProtfolioTile key={index} protfolioDetail={protfolioDetail} />
+                        <div key={index} className="protfolioTile" onClick={() => handleClick(protfolioDetail, index)}>
+                            <img src={protfolioDetail.imageLink} alt="Protfolio Image" />
+                        </div>
+                        // <ProtfolioTile key={index} protfolioDetail={protfolioDetail} onClick={() => handleClick(protfolioDetail, index)} />
                     ))}
+
                 </div>
                 <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                    &gt;
+                    <i class="fa-solid fa-arrow-right fa-xl"></i>
                 </button>
             </div>
 
@@ -60,29 +97,15 @@ function Protfolio() {
 
                 </div>
             )}
-
-            {/* {displayCount < protfolioDetails.length && (
-                <div className="viewMoreButton">
-                    <button onClick={handleViewMore}>View More</button>
-                </div>
+            {clickedImg && (
+                <ImagePopup
+                    clickedImg={clickedImg}
+                    handleRotationRight={handleRotationRight}
+                    handleRotationLeft={handleRotationLeft}
+                    setClickedImg={setClickedImg}
+                />
             )}
-            {displayCount >= protfolioDetails.length && (
-                <div className="viewAllLink">
-                    <Link to="/view-all">View All</Link>
-                    <button onClick={handleViewLess}>View Less</button>
-                </div>
-            )} */}
         </div>
-
-        // <div id="protfolio" className="content">
-        //     <h1 className="protfolioHeading">Protfolio</h1>
-        //     <p className="protfolioHeading">Here is a list of Images from our previous works</p>
-        //     <div className="rowForprotfolio">
-        //         {protfolioDetails.map((protfolioDetail) => (
-        //             <ProtfolioTile protfolioDetail={protfolioDetail} />
-        //         ))}
-        //     </div>
-        // </div>
     )
 
 
