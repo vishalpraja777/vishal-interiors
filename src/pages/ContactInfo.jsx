@@ -1,10 +1,29 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from "sonner";
 
 function ContactInfo() {
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_n2wgssp', 'template_2tx8n1v', form.current, 'GN1SvDCgYcfoTFLTr')
+            .then((result) => {
+                toast.success('Query Sent Successfully');
+                console.log(result.text);
+                document.getElementById("contactUsFrom").reset();
+            }).catch((error) => {
+                toast.error('Error Sending Query');
+                console.log(error.text);
+                document.getElementById("contactUsFrom").reset();
+            });
+    };
+
     return (
         <div id="contactinfo" className="content2">
+            <Toaster richColors />
             <h1>Contact Us</h1>
             <div className="contact-us">
                 <div className="contact-leftcol">
@@ -49,7 +68,7 @@ function ContactInfo() {
                     </div> */}
                 </div>
                 <div className="contact-rightcol">
-                    <form action="">
+                    <form ref={form} onSubmit={sendEmail} id="contactUsFrom">
                         <input type="text" name="name" placeholder="Enter Your Name" required />
                         <input type="email" name="email" placeholder="Enter Your Email" />
                         <input type="tel" name="number" placeholder="Enter Your contact number" required />

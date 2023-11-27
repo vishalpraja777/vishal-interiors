@@ -9,7 +9,7 @@ function ServiceTile(props) {
             <img src={props.serviceDetail.imageLink} alt="Service Image" />
             <h3>{props.serviceDetail.heading}</h3>
             <p>{props.serviceDetail.description}</p>
-            {/* <button className="serviceBtn">Enquire Now</button> */}
+            <button className="serviceBtn">Enquire Now</button>
         </div>
     )
 

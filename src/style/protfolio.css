@@ -1,7 +1,7 @@
 /* protfoliio.css */
 
 #protfolio {
-    /* padding-top: 30px; */
+    padding: 30px;
 }
 
 .protfolioHeading {
@@ -16,7 +16,7 @@
     /* height: 100vh; */
     margin: 10px;
     /* text-align: center; */
-    padding: 20px 50px;
+    padding: 20px 20px;
     grid-template-columns: auto auto auto auto;
     /* background-color: #2196F3;
     padding: 10px; */

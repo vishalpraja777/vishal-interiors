@@ -1,10 +1,15 @@
-import React, { useRef, useEffect } from "react";
-// import SendEmail from "../email/SendEmail";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 import { Toaster, toast } from "sonner";
 
-function GetInTouch({ show, closePopup, text }) {
+function GetInTouch({ show, closePopup, text, selectedService }) {
+
+    const [descriptionMsg, setDescriptionMsg] = useState(selectedService);
+
+    if(selectedService != null){
+        
+    }
 
     const form = useRef();
 
@@ -32,6 +37,7 @@ function GetInTouch({ show, closePopup, text }) {
     };
 
     useEffect(() => {
+        setDescriptionMsg(selectedService)
         if (show) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -52,7 +58,12 @@ function GetInTouch({ show, closePopup, text }) {
                             <input type="text" name="name" placeholder="Enter Your Name" required />
                             <input type="email" name="email" placeholder="Enter Your Email" />
                             <input type="tel" name="number" placeholder="Enter Your contact number" required />
-                            <textarea name="message" id="" rows="4" placeholder="Enter Your Message"></textarea>
+
+                            <textarea name="message" id="" rows="4" placeholder="Enter Your Message" 
+                            value={descriptionMsg} 
+                            onChange={e => setDescriptionMsg(e.target.value)}>
+
+                            </textarea>
                             <button type="submit" className="feedback-btn">{text}</button>
                         </form>
                     </div>

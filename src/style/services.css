@@ -44,23 +44,25 @@
   {
     box-shadow: 0 0 30px 0px rgba(95, 65, 65, 0.4);
     transform: scale(1.02,1.02);
-    transition: 0.4s;
+    transition: 0.2s;
   }
 
   .serviceBtn
   {
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 2px #000;
-    color: #2c1f31;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: #d6ba71;
+    color: #122b4b;
     cursor: pointer;
   }
 
   .serviceBtn:hover
   {
-    background-color: #A8D3E2;
-    transition: 0.4s;
+    transform: scale(1.05, 1.05);
+    /* transition: 0.4s; */
   }
 
   @media screen and (max-width: 768px) {

@@ -12,7 +12,7 @@
     position: fixed;
     margin: auto;
     backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
     border-radius: 12px;
 }
 
@@ -42,8 +42,8 @@
 
 .closeBtn{
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 2%;
+    right: 3%;
     width: 25px;
     height: 25px;
     border: none;

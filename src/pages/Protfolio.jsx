@@ -73,7 +73,7 @@ function Protfolio() {
 
             <div className="photoContainer">
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                    <i class="fa-solid fa-arrow-left fa-xl"></i>
+                    <i className="fa-solid fa-arrow-left fa-xl"></i>
                 </button>
                 <div className="rowForprotfolio">
 
@@ -86,7 +86,7 @@ function Protfolio() {
 
                 </div>
                 <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                    <i class="fa-solid fa-arrow-right fa-xl"></i>
+                    <i className="fa-solid fa-arrow-right fa-xl"></i>
                 </button>
             </div>
 
