@@ -1,8 +1,7 @@
 /* navbar.css */
 
 /* Reset some default styles */
-body,
-.navbaList {
+body {
   margin: 0;
   padding: 0;
 }
@@ -16,7 +15,7 @@ body,
   padding: 30px 0;
 
   /* position: sticky; */
-  top: 0;
+  /* top: 0; */
   /* Stick to the top of the viewport */
   z-index: 100;
 }
@@ -40,11 +39,11 @@ body,
 
 /* Center the navigation content */
 .navbarMain {
-  max-width: 100%;
+  /* max-width: 100%; */
   margin: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* Center the logo or brand name */
@@ -56,6 +55,7 @@ body,
 
 /* Style the navigation links */
 .navbaList {
+  float: right;
   list-style: none;
   display: flex;
   align-items: center;
@@ -94,24 +94,49 @@ a:hover {
   cursor: pointer;
 }
 
+.checkBtn{
+  /* font-size: 30px; */
+  float: right;
+  /* margin-right: 40px; */
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
 /* Media query for small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .navbarMain {
     flex-direction: column; /* Stack navigation content vertically */
-    align-items: center; /* Center items */
+    /* align-items: center; */
   }
 
   .navbarLogo {
-    margin-bottom: 20px; /* Add space below the logo */
-    text-align: center; /* Center the logo text */
+    display: flex;
+    margin-bottom: 0px; /* Add space below the logo */
+    text-align: center;
+    justify-content: space-between;
+
   }
 
   .navbaList {
+    position: fixed;
     flex-direction: column; /* Stack navigation links vertically */
-    align-items: center; /* Center items */
+    align-items: center; 
+    top: 10%;
+    background-color: #314359;
+    padding: 20px;
+    transition: all 0.5s;
   }
 
   .navbaList li {
     margin: 10px 0; /* Add space between links */
   }
+  .checkBtn{
+    display: block;
+    margin-left: 0px;
+  }
+
 }

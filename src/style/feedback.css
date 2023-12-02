@@ -95,7 +95,7 @@
 /* Media query for small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .slider-wrapper {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
     padding: 50px 20px; /* Adjust padding */
   }
 

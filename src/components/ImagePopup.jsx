@@ -21,8 +21,8 @@ function ImagePopup({ clickedImg, handleRotationRight, handleRotationLeft, setCl
         <div className="overlayPhoto dismiss" onClick={(e) => { handleClick(e) }}>
             <img src={clickedImg} alt="Bigger Picture" />
             <span className="dismiss" onClick={(e) => { handleClick(e) }}>X</span>
-            <div onClick={handleRotationLeft} className="overlayPhoto-arrows_left"><i class="fa-solid fa-arrow-left fa-xl"></i></div>
-            <div onClick={handleRotationRight} className="overlayPhoto-arrows_right"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+            <div onClick={handleRotationLeft} className="overlayPhoto-arrows_left"><i className="fa-solid fa-arrow-left fa-xl"></i></div>
+            <div onClick={handleRotationRight} className="overlayPhoto-arrows_right"><i className="fa-solid fa-arrow-right fa-xl"></i></div>
         </div>
     </>;
 
