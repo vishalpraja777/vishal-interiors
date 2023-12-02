@@ -13,6 +13,7 @@ body {
   color: #aec6cf;
   /* color: #A8D3E2; */
   padding: 30px 0;
+  min-height: 40px;
 
   /* position: sticky; */
   /* top: 0; */
@@ -107,7 +108,7 @@ a:hover {
 }
 
 /* Media query for small screens (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .navbarMain {
     flex-direction: column; /* Stack navigation content vertically */
     /* align-items: center; */
@@ -127,6 +128,7 @@ a:hover {
     align-items: center; 
     top: 10%;
     background-color: #314359;
+    border-radius: 0px 0px 0px 20px;
     padding: 20px;
     transition: all 0.5s;
   }

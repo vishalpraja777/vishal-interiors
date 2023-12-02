@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     /* height: 90vh; */
-    min-height: 90vh;
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
