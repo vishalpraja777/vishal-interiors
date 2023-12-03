@@ -12,7 +12,7 @@ function AboutUs(){
                  We have completed some of the finest designs with the help of our renowned designers.</p>
         </div>
         <div className="rightAbout">
-            <img src="src/assets/chairs1.png" alt="About Us Image" />
+            <img src={"/assets/chairs1.png"} alt="About Us Image" />
         </div>
     </div>
     ) 

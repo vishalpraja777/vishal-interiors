@@ -121,6 +121,11 @@
     .contact-us p{
       /* font-size: 0.75em; */
   }
+
+  #contactinfo p{
+    /* text-align: center; */
+    /* color: #314359; */
+  }
   
     .contact-leftcol, .contact-rightcol {
       width: 85%; /* Take full width on smaller screens */

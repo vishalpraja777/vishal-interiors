@@ -1,39 +1,39 @@
 const protfolioDetails = [
     {
         id: 1,
-        imageLink: "src/assets/backgroundImg.jpg"
+        imageLink: "/assets/backgroundImg.jpg"
     },
     {
         id: 2,
-        imageLink: "src/assets/canteen.jpg"
+        imageLink: "/assets/canteen.jpg"
     },
     {
         id: 3,
-        imageLink: "src/assets/chairs.jpg"
+        imageLink: "/assets/chairs.jpg"
     },
     {
         id: 4,
-        imageLink: "src/assets/furniture.jpg"
+        imageLink: "/assets/furniture.jpg"
     },
     {
         id: 5,
-        imageLink: "src/assets/hallkitchen.jpg"
+        imageLink: "/assets/hallkitchen.jpg"
     },
     {
         id: 6,
-        imageLink: "src/assets/kitchen.jpg"
+        imageLink: "/assets/kitchen.jpg"
     },
     {
         id: 7,
-        imageLink: "src/assets/livingroom.jpg"
+        imageLink: "/assets/livingroom.jpg"
     },
     {
         id: 8,
-        imageLink: "src/assets/livingroom1.jpg"
+        imageLink: "/assets/livingroom1.jpg"
     }
     // {
     //     id: 9,
-    //     imageLink: "src/assets/livingroom1.jpg"
+    //     imageLink: "/assets/livingroom1.jpg"
     // }
 ]
 
