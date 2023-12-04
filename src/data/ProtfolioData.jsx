@@ -1,39 +1,39 @@
 const protfolioDetails = [
     {
         id: 1,
-        imageLink: "/assets/backgroundImg.jpg"
+        imageLink: "/vishal-interiors/assets/backgroundImg.jpg"
     },
     {
         id: 2,
-        imageLink: "/assets/canteen.jpg"
+        imageLink: "/vishal-interiors/assets/canteen.jpg"
     },
     {
         id: 3,
-        imageLink: "/assets/chairs.jpg"
+        imageLink: "/vishal-interiors/assets/chairs.jpg"
     },
     {
         id: 4,
-        imageLink: "/assets/furniture.jpg"
+        imageLink: "/vishal-interiors/assets/furniture.jpg"
     },
     {
         id: 5,
-        imageLink: "/assets/hallkitchen.jpg"
+        imageLink: "/vishal-interiors/assets/hallkitchen.jpg"
     },
     {
         id: 6,
-        imageLink: "/assets/kitchen.jpg"
+        imageLink: "/vishal-interiors/assets/kitchen.jpg"
     },
     {
         id: 7,
-        imageLink: "/assets/livingroom.jpg"
+        imageLink: "/vishal-interiors/assets/livingroom.jpg"
     },
     {
         id: 8,
-        imageLink: "/assets/livingroom1.jpg"
+        imageLink: "/vishal-interiors/assets/livingroom1.jpg"
     }
     // {
     //     id: 9,
-    //     imageLink: "/assets/livingroom1.jpg"
+    //     imageLink: "/vishal-interiors/assets/livingroom1.jpg"
     // }
 ]
 
