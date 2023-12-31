@@ -6,10 +6,12 @@ function AboutUs(){
         <div id="aboutus" className="content">
         <div className="leftAbout">
             <h1>About Us</h1>
-            <p>We, Vishal Interiors situated at Virgonagar, Bangalore, Karnataka, operates in the fields of interior
-                 designing with a talented team of designers. We have successfully conceptualized and completed 
-                 the interior designs of numerous residential, commercial projects as well as architectural projects. 
-                 We have completed some of the finest designs with the help of our renowned designers.</p>
+            <p>We, Vishal Interiors situated at Bengaluru, Karnataka, operate in the fields of interior
+                 decoration and designing. We have served in various loation across Bengaluru, Mysuru and few other cities in 
+                 Andra Pradesh and Tamil Nadu. We are in this field for more than 30 years and have completed numerous projects
+                 including Flats, Villas, Bungalow, Duplex, Office spaces and a lot more. The main services we offer are 
+                 Carpentry and Furniture making, but also provide services in Painting and POP.
+                 </p>
         </div>
         <div className="rightAbout">
             <img src={"/vishal-interiors/assets/chairs1.png"} alt="About Us Image" />

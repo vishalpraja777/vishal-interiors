@@ -1,89 +1,97 @@
 /* service.css */
 
-  #services{
-    /* padding: 40px; */
-  }
+#services {
+  /* padding: 40px; */
+}
 
-  .servicesHeading{
-    text-align: center;
-    color: #314359;
-    margin-top: 10px;
-  }
+.servicesHeading {
+  text-align: center;
+  color: #314359;
+  margin-top: 10px;
+}
 
-  .rowForServices
-  {
-    display: grid;
-    /* width: 92%; */
-    /* height: 100vh; */
-    margin: 10px;
-    /* text-align: center; */
-    padding: 0px 0px;
-    /* grid-template-columns: auto auto auto auto; */
-    grid-template-columns: auto auto auto auto;
-    /* background-color: #2196F3;
+.rowForServices {
+  display: grid;
+  /* width: 92%; */
+  /* height: 100vh; */
+  margin: 10px;
+  /* text-align: center; */
+  padding: 0px 0px;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: auto auto auto auto;
+  /* background-color: #2196F3;
     padding: 10px; */
 
+}
+
+.serviceTile {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin: 16px 6px;
+  text-align: center;
+  padding: 12px;
+}
+
+.serviceTile img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.serviceTile:hover {
+  box-shadow: 0 0 30px 0px rgba(95, 65, 65, 0.4);
+  transform: scale(1.02, 1.02);
+  transition: 0.2s;
+}
+
+.serviceBtn {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 50px;
+  background-color: #d6ba71;
+  color: #122b4b;
+  cursor: pointer;
+}
+
+.serviceBtn:hover {
+  transform: scale(1.05, 1.05);
+  /* transition: 0.4s; */
+}
+
+.serviceTile h3 {
+  padding-top: 10px;
+}
+
+.serviceImg {
+  aspect-ratio: 4 / 2.7;
+}
+
+@media screen and (max-width: 768px) {
+  #services {
+    padding: 3%;
+    /* Adjust padding for smaller screens */
+    padding-top: 15px;
   }
 
-  .serviceTile
-  {
-    flex-basis: 30%;
-    border-radius: 10px;
-    margin: 16px 6px;
-    text-align: center;
-    padding: 12px;
+  .servicesHeading {
+    font-size: 1.2em;
+    /* Adjust heading font size */
   }
 
-  .serviceTile img
-  {
-    width: 100%;
-    border-radius: 10px;
+  .rowForServices {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    /* gap: 10px; */
+    margin: 0;
   }
 
-  .serviceTile:hover
-  {
-    box-shadow: 0 0 30px 0px rgba(95, 65, 65, 0.4);
-    transform: scale(1.02,1.02);
-    transition: 0.2s;
+  .serviceTile {
+    padding: 8px;
+    /* Adjust tile padding */
   }
 
-  .serviceBtn
-  {
-    margin-top: 12px;
-    margin-bottom: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 50px;
-    background-color: #d6ba71;
-    color: #122b4b;
-    cursor: pointer;
+  .serviceBtn {
+    padding: 8px 18px;
+    /* Adjust button padding */
   }
-
-  .serviceBtn:hover
-  {
-    transform: scale(1.05, 1.05);
-    /* transition: 0.4s; */
-  }
-
-  @media screen and (max-width: 768px) {
-    #services {
-      padding: 3%; /* Adjust padding for smaller screens */
-    }
-  
-    .servicesHeading {
-      font-size: 1.2em; /* Adjust heading font size */
-    }
-  
-    .rowForServices {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid layout for smaller screens */
-      gap: 10px; /* Reduce gap between grid items */
-    }
-  
-    .serviceTile {
-      padding: 8px; /* Adjust tile padding */
-    }
-  
-    .serviceBtn {
-      padding: 6px 12px; /* Adjust button padding */
-    }
-  }
+}

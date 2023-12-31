@@ -5,11 +5,11 @@ const protfolioDetails = [
     },
     {
         id: 2,
-        imageLink: "/vishal-interiors/assets/canteen.jpg"
+        imageLink: "/vishal-interiors/assets/shoerack.jpeg"
     },
     {
         id: 3,
-        imageLink: "/vishal-interiors/assets/chairs.jpg"
+        imageLink: "/vishal-interiors/assets/kitchenempty.jpg"
     },
     {
         id: 4,
@@ -17,7 +17,7 @@ const protfolioDetails = [
     },
     {
         id: 5,
-        imageLink: "/vishal-interiors/assets/hallkitchen.jpg"
+        imageLink: "/vishal-interiors/assets/tvroom.jpg"
     },
     {
         id: 6,
@@ -25,11 +25,11 @@ const protfolioDetails = [
     },
     {
         id: 7,
-        imageLink: "/vishal-interiors/assets/livingroom.jpg"
+        imageLink: "/vishal-interiors/assets/doorentry.jpeg"
     },
     {
         id: 8,
-        imageLink: "/vishal-interiors/assets/livingroom1.jpg"
+        imageLink: "/vishal-interiors/assets/radioshelf.jpg"
     }
     // {
     //     id: 9,

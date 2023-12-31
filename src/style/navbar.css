@@ -126,9 +126,9 @@ a:hover {
     position: fixed;
     flex-direction: column; /* Stack navigation links vertically */
     align-items: center; 
-    top: 10%;
+    top: 8%;
     background-color: #314359;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 20px 0px 0px 20px;
     padding: 20px;
     transition: all 0.5s;
   }

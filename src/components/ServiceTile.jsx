@@ -6,7 +6,7 @@ function ServiceTile(props) {
 
     return (
         <div className="serviceTile">
-            <img src={props.serviceDetail.imageLink} alt="Service Image" />
+            <img src={props.serviceDetail.imageLink} alt="Service Image" className="serviceImg"/>
             <h3>{props.serviceDetail.heading}</h3>
             <p>{props.serviceDetail.description}</p>
             <button className="serviceBtn">Enquire Now</button>

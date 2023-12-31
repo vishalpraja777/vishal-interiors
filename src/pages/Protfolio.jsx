@@ -72,7 +72,7 @@ function Protfolio() {
             <p className="protfolioHeading">Here is a list of Images from our previous works</p>
 
             <div className="photoContainer">
-                <button onClick={handlePrevPage} disabled={currentPage === 1}>
+                <button onClick={handlePrevPage} disabled={currentPage === 1} className="protfolioButton">
                     <i className="fa-solid fa-arrow-left fa-xl"></i>
                 </button>
                 <div className="rowForprotfolio">
@@ -85,7 +85,7 @@ function Protfolio() {
                     ))}
 
                 </div>
-                <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+                <button onClick={handleNextPage} disabled={currentPage === totalPages} className="protfolioButton">
                     <i className="fa-solid fa-arrow-right fa-xl"></i>
                 </button>
             </div>

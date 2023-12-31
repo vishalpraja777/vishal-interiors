@@ -11,10 +11,13 @@ import Footer from './components/Footer'
 import Feedback from './components/Feedback'
 import FixedContactUsBtn from './components/FixedContactUsBtn'
 
+import DocumentTitle from 'react-document-title'
+
 function App() {
 
   return (
     <>
+    <DocumentTitle title={"Vishal Interiors"}>
     <div>
       {/* <Router>
         <Routes>
@@ -35,6 +38,7 @@ function App() {
       <Footer/>
       <FixedContactUsBtn/>
     </div>
+    </DocumentTitle>
     </>
   )
 }
