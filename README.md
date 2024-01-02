@@ -10,5 +10,5 @@ Currently, two official plugins are available:
 
 # TODO
 <!-- - Add relavent images -->
-- Services
+<!-- - Services -->
 <!-- - Feedback names -->

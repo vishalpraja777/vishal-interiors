@@ -35,7 +35,8 @@ function Navbar() {
 
         <nav className="navbarLogo">
           <div className="navLeft">
-            VISHAL INTERIORS
+            <img src="/vilogo.png" alt="logo" className="logoImg"/>
+            <div>VISHAL INTERIORS</div>
           </div>
           <div className="navRight">
             <input type="checkbox" id="check" />

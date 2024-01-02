@@ -54,6 +54,18 @@ body {
   /* margin: 0 auto; Center the nav element */
 }
 
+
+.navLeft {
+  /* justify-content: left; */
+  display: flex;
+  align-items: center; /
+}
+
+.logoImg {
+  max-width: 40px;
+  margin-right: 10px; 
+}
+
 /* Style the navigation links */
 .navbaList {
   float: right;
@@ -95,7 +107,7 @@ a:hover {
   cursor: pointer;
 }
 
-.checkBtn{
+.checkBtn {
   /* font-size: 30px; */
   float: right;
   /* margin-right: 40px; */
@@ -103,20 +115,22 @@ a:hover {
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
 /* Media query for small screens (max-width: 768px) */
 @media screen and (max-width: 880px) {
   .navbarMain {
-    flex-direction: column; /* Stack navigation content vertically */
+    flex-direction: column;
+    /* Stack navigation content vertically */
     /* align-items: center; */
   }
 
   .navbarLogo {
     display: flex;
-    margin-bottom: 0px; /* Add space below the logo */
+    margin-bottom: 0px;
+    /* Add space below the logo */
     text-align: center;
     justify-content: space-between;
 
@@ -124,8 +138,9 @@ a:hover {
 
   .navbaList {
     position: fixed;
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center; 
+    flex-direction: column;
+    /* Stack navigation links vertically */
+    align-items: center;
     top: 75px;
     background-color: #314359;
     border-radius: 20px 0px 0px 20px;
@@ -134,9 +149,11 @@ a:hover {
   }
 
   .navbaList li {
-    margin: 10px 0; /* Add space between links */
+    margin: 10px 0;
+    /* Add space between links */
   }
-  .checkBtn{
+
+  .checkBtn {
     display: block;
     margin-left: 0px;
   }
