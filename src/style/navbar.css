@@ -58,12 +58,12 @@ body {
 .navLeft {
   /* justify-content: left; */
   display: flex;
-  align-items: center; /
+  align-items: center;
 }
 
 .logoImg {
   max-width: 40px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 /* Style the navigation links */
@@ -156,6 +156,23 @@ a:hover {
   .checkBtn {
     display: block;
     margin-left: 0px;
+  }
+
+
+
+  .navLeft {
+    /* justify-content: left; */
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .logoImg {
+    max-width: 40px;
+    margin-right: 10px;
+  }
+
+  .logoText{
+    font-size: 0.75em;
   }
 
 }
