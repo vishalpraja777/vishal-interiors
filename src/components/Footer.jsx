@@ -11,8 +11,8 @@ function Footer() {
                     <div className="footer-section">
                         <h4>Contact Us</h4>
                         <p><i className="fas fa-map-marker-alt icon-blue"></i> Bangalore - 560049</p>
-                        <p><i className="far fa-envelope icon-blue"></i> Email: purushothamprajapati@gmail.com</p>
-                        <p><i className="fas fa-phone icon-blue"></i> Phone: +91 9845328512</p>
+                        <p><i className="far fa-envelope icon-blue"></i> Email: <a href="mailto:purushothamprajapati@gmail.com">purushothamprajapati@gmail.com</a></p>
+                        <p><i className="fas fa-phone icon-blue"></i> Phone: <a href="tel:+919845328512">+91 9845328512</a></p>
                     </div>
 
                     <div className="footer-section">

@@ -9,6 +9,11 @@ Currently, two official plugins are available:
 
 
 # TODO
-<!-- - Add relavent images -->
-<!-- - Services -->
-<!-- - Feedback names -->
+## In Contact Us
+<!-- - On click open Gmail and phone number - In footer also -->
+<!-- - Either phone number or email should be mandatory - Done -->
+<!-- - Add validation for phone number -->
+<!-- - - +91 should be displayed automatically then followed by 10 digit -->
+## Protfolio
+- Onslide for moving across images in mobile view
+- Image description

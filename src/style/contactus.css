@@ -89,6 +89,15 @@
     padding: 10px;
 }
 
+.contactInfo a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactInfo a:hover{
+  color: #aec6cf;
+}
+
 
 .feedback-btn {
   padding: 8px 16px;
