@@ -17,3 +17,5 @@ Currently, two official plugins are available:
 ## Protfolio
 - Onslide for moving across images in mobile view
 - Image description
+
+"homepage": "https://vishalpraja777.github.io/vishal-interiors/",
