@@ -14,7 +14,8 @@ function AboutUs(){
                  </p>
         </div>
         <div className="rightAbout">
-            <img src={"/vishal-interiors/assets/chairs1.png"} alt="About Us Image" />
+            {/* <img src={"/vishal-interiors/assets/chairs1.png"} alt="About Us Image" /> */}
+            <img src={"/assets/chairs1.png"} alt="About Us Image" />
         </div>
     </div>
     ) 

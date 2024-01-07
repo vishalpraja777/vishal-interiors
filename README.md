@@ -18,4 +18,6 @@ Currently, two official plugins are available:
 - Onslide for moving across images in mobile view
 - Image description
 
-"homepage": "https://vishalpraja777.github.io/vishal-interiors/",
+"homepage": "https://vishalpraja777.github.io/vishal-interiors/", - in package.json
+
+/vishal-interiors/ - before all images
